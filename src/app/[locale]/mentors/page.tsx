@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Link } from "@/routing";
+import { Link } from "@/i18n/routing";
 
 export default function MentorsPage() {
   const t = useTranslations("About");
