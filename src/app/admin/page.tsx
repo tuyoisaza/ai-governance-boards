@@ -1,4 +1,5 @@
 import prisma from "@/lib/prisma";
+export const dynamic = "force-dynamic";
 import { Users, FileText, Settings, AreaChart } from "lucide-react";
 
 export const metadata = { title: "Dashboard Overview" };

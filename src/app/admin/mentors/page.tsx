@@ -1,4 +1,5 @@
 import prisma from "@/lib/prisma";
+export const dynamic = "force-dynamic";
 import { Plus } from "lucide-react";
 
 export const metadata = { title: "Manage Advisory Team" };

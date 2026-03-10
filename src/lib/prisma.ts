@@ -3,14 +3,8 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
 
 const prismaClientSingleton = () => {
-  const connectionString = process.env.DATABASE_URL;
+  const connectionString = process.env.DATABASE_URL || "postgresql://postgres:postgres@localhost:5432/postgres";
   
-  if (!connectionString) {
-    // During build time, DATABASE_URL might be missing. 
-    // We return a default client which might fail at runtime but allow build to proceed if not queried.
-    return new PrismaClient();
-  }
-
   const pool = new Pool({ connectionString });
   const adapter = new PrismaPg(pool);
   return new PrismaClient({ adapter });
