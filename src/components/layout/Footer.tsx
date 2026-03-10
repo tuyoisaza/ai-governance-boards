@@ -9,10 +9,10 @@ export default function Footer() {
           <div className="col-span-2 space-y-6">
             <Link href="/" className="flex items-center gap-2">
               <Diamond className="w-5 h-5 text-[var(--color-accent)]" />
-              <span className="font-serif text-lg font-bold tracking-tighter uppercase">AI GOVERNANCE</span>
+              <span className="font-serif text-lg font-bold tracking-tighter uppercase">TUYO ISAZA</span>
             </Link>
             <p className="text-[var(--color-muted)] text-sm max-w-sm leading-relaxed">
-              Premium advisory for Corporate Juntas and Executive Committees. Elevating governance standards for the age of Machine Intelligence.
+              Independent Advisor to Corporate Boards and Executive Committees. Elevating governance standards for the age of Machine Intelligence.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="p-2 border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors">
@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-[var(--color-border)] flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[var(--color-muted)] text-[10px] font-bold uppercase tracking-widest">
-            © 2024 AI GOVERNANCE ADVISORY. ALL STRATEGIC RIGHTS RESERVED.
+            © 2024 TUYO ISAZA. ALL STRATEGIC RIGHTS RESERVED.
           </p>
           <div className="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-[var(--color-muted)]">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>

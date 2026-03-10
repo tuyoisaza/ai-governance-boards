@@ -1,58 +1,83 @@
 {
   "Index": {
-    "title": "Gobernanza de IA",
+    "title": "Tuyo Isaza | Asesor de Gobernanza de IA",
     "hero": {
       "title": "Supervisión Estratégica para la Era de la IA",
-      "subtitle": "Equipando a Directores Corporativos y Comités Ejecutivos con los marcos de gobernanza necesarios para navegar y capitalizar con seguridad la Inteligencia Artificial.",
-      "cta": "Explorar Servicios"
+      "subtitle": "Asesoría independiente para Juntas Directivas y Comités Ejecutivos. Construyendo los marcos de gobernanza necesarios para navegar y capitalizar con seguridad la Inteligencia Artificial.",
+      "cta": "Programas de Asesoría"
+    },
+    "challenge": {
+      "title": "El Desafio de la Gobernanza de IA",
+      "subtitle": "Las Juntas son responsables de supervisar la IA, sin embargo, la mayoría carece de los marcos estratégicos requeridos. Esto crea una exposición crítica.",
+      "content": "Tuyo ayuda a las juntas a construir la claridad estratégica y las estructuras de gobernanza necesarias para supervisar la IA, pasando de iniciativas técnicas aisladas a un marco de supervisión claro."
     }
   },
   "Header": {
-    "services": "SERVICIOS",
-    "pricing": "PRECIOS",
-    "advisors": "ASESORES",
+    "brand": "TUYO ISAZA",
+    "services": "ASESORÍA",
+    "pricing": "INVERSIÓN",
+    "advisors": "EXPERIENCIA",
     "insights": "CONOCIMIENTOS",
-    "about": "NOSOTROS",
+    "about": "SOBRE TUYO",
     "contact": "Agendar Sesión"
   },
   "Services": {
     "briefing": {
       "title": "AI Board Briefing",
-      "duration": "Sesión de 3 horas",
+      "duration": "Sesión Estratégica de 3 horas",
       "objective": "Lenguaje y marcos estratégicos para juntas.",
-      "description": "Sesión ejecutiva diseñada para que las juntas directivas comprendan el panorama de la IA, sus riesgos estratégicos y las oportunidades de gobernanza.",
+      "description": "Sesión ejecutiva diseñada para que las juntas comprendan el panorama de la IA, sus implicaciones estratégicas y los marcos de supervisión requeridos.",
       "deliverables": [
-        "Marco de Decisión de IA para Juntas",
-        "Matriz de Riesgos y Oportunidades",
-        "Glosario Ejecutivo de Términos de IA"
+        "AI Board Memo",
+        "Snapshot de Riesgos y Oportunidades",
+        "Marco de Preguntas de IA para la Junta"
       ]
     },
     "blueprint": {
       "title": "AI Governance Blueprint",
-      "duration": "Programa de 6-8 semanas",
+      "duration": "Programa de 6-8 Semanas",
       "objective": "Diseño de un modelo de gobernanza a medida.",
-      "description": "Consultoría profunda para establecer las políticas, comités y procesos de supervisión necesarios para una IA responsable y efectiva.",
+      "description": "Proceso de asesoría profunda para establecer las políticas, comités y procesos de supervisión necesarios para una adopción de IA responsable y efectiva.",
       "deliverables": [
-        "Manual de Gobernanza de IA Corporativa",
-        "Constitución del Comité de Ética de IA",
-        "Plan de Auditoría de Sistemas de IA"
+        "Mapa de Riesgos de IA",
+        "Mapa de Oportunidades de IA",
+        "Marco de Gobernanza de IA",
+        "Marco de Decisión de Inversión en IA",
+        "Hoja de Ruta Estratégica de IA"
       ]
     },
     "advisor": {
       "title": "AI Board Advisor",
-      "duration": "Acompañamiento Anual",
+      "duration": "Asesoría Permanente",
       "objective": "Supervisión estratégica continua.",
-      "description": "Asesoría permanente para mantener a la junta actualizada sobre cambios regulatorios, avances técnicos y dilemas éticos emergentes.",
+      "description": "Alianza continua que proporciona revisiones trimestrales, evaluación de inversiones y monitoreo de riesgos tecnológicos y regulatorios emergentes.",
       "deliverables": [
-        "Informes Trimestrales de Vigilancia Tecnológica",
-        "Sesiones de Revisión de Estrategia de IA",
-        "Acceso Prioritario a Expertos en Seguridad"
+        "Dashboard de Gobernanza de IA",
+        "Registro de Riesgos de IA",
+        "Insights Estratégicos de IA"
       ]
     }
   },
+  "About": {
+    "title": "Tuyo Isaza",
+    "subtitle": "Asesor Independiente de Gobernanza de IA",
+    "philosophy": {
+      "title": "Asesoría Independiente",
+      "content": "La Inteligencia Artificial no es una implementación técnica; es un cambio fundamental en la gobernanza corporativa. Mi trabajo asegura que los Directores de Junta tengan la claridad, el lenguaje y los marcos independientes requeridos para supervisar esta transición."
+    },
+    "bio": {
+      "title": "Resumen Ejecutivo",
+      "content": "Tuyo Isaza es un estratega de transformación que trabaja en la intersección del liderazgo, la cultura organizacional y la adopción de inteligencia artificial. Con más de dos décadas de experiencia en entornos multinacionales, ayuda a los líderes a preservar la claridad estratégica y la alineación organizacional durante los cambios tecnológicos."
+    },
+    "experience": {
+      "title": "Trayectoria Profesional",
+      "content": "Ha colaborado con organizaciones globales en América Latina y Estados Unidos, asesorando a marcas como Microsoft, McDonald's, Nokia, Citibank y Kellogg's. Tuyo es conferencista internacional, autor y asesor de liderazgo enfocado en innovación y cambio impulsado por la tecnología."
+    },
+    "cta": "Solicitar Sesión Ejecutiva"
+  },
   "Pricing": {
-    "title": "Inversión en Gobernanza",
-    "subtitle": "Programas diseñados para la excelencia en la supervisión de IA.",
+    "title": "Inversión en Asesoría",
+    "subtitle": "Programas estratégicos diseñados para la excelencia en la supervisión a nivel de junta.",
     "plans": {
       "briefing": "AI Board Briefing",
       "blueprint": "Governance Blueprint",
@@ -61,24 +86,12 @@
   },
   "Contact": {
     "title": "Contacto Ejecutivo",
-    "subtitle": "Inicie su transformación de gobernanza hoy mismo.",
+    "subtitle": "Comunicación directa para solicitudes de asesoría a nivel de junta.",
     "form": {
       "name": "Nombre Completo",
       "email": "Correo Corporativo",
-      "company": "Organización",
+      "company": "Organización / Junta",
       "submit": "Enviar Solicitud"
     }
-  },
-  "About": {
-    "title": "La Firma",
-    "philosophy": {
-      "title": "Nuestra Filosofía",
-      "content": "Creemos que la Inteligencia Artificial no es solo una implementación tecnológica, sino un cambio fundamental en la gobernanza corporativa. Nuestra misión es asegurar que los Directores de Juntas tengan la claridad, el lenguaje y los marcos necesarios para supervisar esta transición de manera efectiva."
-    },
-    "authority": {
-      "title": "Independencia y Autoridade",
-      "content": "Permanecer agnósticos respecto a los proveedores es la piedra angular de nuestra asesoría. No vendemos software; proporcionamos supervisión estratégica. Esta independencia nos permite ofrecer evaluaciones imparciales de las inversiones en IA y los panoramas de riesgo."
-    },
-    "cta": "Conozca a nuestros Socios"
   }
 }

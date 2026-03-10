@@ -21,7 +21,7 @@ export default function Header() {
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <Diamond className="w-6 h-6 text-[var(--color-accent)] group-hover:scale-110 transition-transform" />
-          <span className="font-serif text-xl font-bold tracking-tighter uppercase">AI GOVERNANCE</span>
+          <span className="font-serif text-xl font-bold tracking-tighter uppercase">{t("brand")}</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

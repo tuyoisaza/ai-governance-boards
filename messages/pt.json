@@ -1,58 +1,83 @@
 {
   "Index": {
-    "title": "Governança de IA",
+    "title": "Tuyo Isaza | Consultor de Governança de IA",
     "hero": {
       "title": "Supervisão Estratégica para a Era da IA",
-      "subtitle": "Capacitando Diretores Corporativos e Comitês Executivos com as estruturas de governança necessárias para navegar e capitalizar com segurança a Inteligência Artificial.",
-      "cta": "Explorar Serviços"
+      "subtitle": "Assessoria independente para Conselhos de Administração e Comitês Executivos. Construindo as estruturas de governança necessárias para navegar e capitalizar com segurança a Inteligência Artificial.",
+      "cta": "Programas de Assessoria"
+    },
+    "challenge": {
+      "title": "O Desafio da Governança de IA",
+      "subtitle": "Os Conselhos são responsáveis por supervisionar a IA, mas a maioria carece das estruturas estratégicas necessárias. Isso cria uma exposição crítica.",
+      "content": "Tuyo ajuda os conselhos a construir a clareza estratégica e as estruturas de governança necessárias para supervisionar a IA, passando de iniciativas técnicas isoladas para uma estrutura de supervisão clara."
     }
   },
   "Header": {
-    "services": "SERVIÇOS",
-    "pricing": "PREÇOS",
-    "advisors": "CONSELHEIROS",
+    "brand": "TUYO ISAZA",
+    "services": "ASSESSORIA",
+    "pricing": "INVESTIMENTO",
+    "advisors": "EXPERIÊNCIA",
     "insights": "INSIGHTS",
-    "about": "SOBRE",
+    "about": "SOBRE TUYO",
     "contact": "Agendar Sessão"
   },
   "Services": {
     "briefing": {
       "title": "AI Board Briefing",
-      "duration": "Sessão de 3 horas",
+      "duration": "Sessão Estratégica de 3 horas",
       "objective": "Linguagem e estruturas estratégicas para conselhos.",
-      "description": "Sessão executiva projetada para que os conselhos de administração compreendam o panorama da IA, seus riscos estratégicos e as oportunidades de governança.",
+      "description": "Sessão executiva projetada para que os conselhos compreendam o panorama da IA, suas implicações estratégicas e as estruturas de supervisão necessárias.",
       "deliverables": [
-        "Estrutura de Decisão de IA para Conselhos",
-        "Matriz de Riscos e Oportunidades",
-        "Glossário Executivo de Termos de IA"
+        "AI Board Memo",
+        "Snapshot de Riscos e Oportunidades",
+        "Estrutura de Perguntas de IA para o Conselho"
       ]
     },
     "blueprint": {
       "title": "AI Governance Blueprint",
-      "duration": "Programa de 6-8 semanas",
+      "duration": "Programa de 6-8 Semanas",
       "objective": "Design de um modelo de governança sob medida.",
-      "description": "Consultoria profunda para estabelecer as políticas, comitês e processos de supervisão necessários para uma IA responsável e eficaz.",
+      "description": "Processo de assessoria profunda para estabelecer as políticas, comitês e processos de supervisão necessários para uma adoção de IA responsável e eficaz.",
       "deliverables": [
-        "Manual de Governança de IA Corporativa",
-        "Constituição do Comitê de Ética de IA",
-        "Plano de Auditoria de Sistemas de IA"
+        "Mapa de Riscos de IA",
+        "Mapa de Oportunidades de IA",
+        "Estrutura de Governança de IA",
+        "Estrutura de Decisão de Investimento em IA",
+        "Roteiro Estratégico de IA"
       ]
     },
     "advisor": {
       "title": "AI Board Advisor",
-      "duration": "Acompanhamento Anual",
+      "duration": "Assessoria Contínua",
       "objective": "Supervisão estratégica contínua.",
-      "description": "Assessoria permanente para manter o conselho atualizado sobre mudanças regulatórias, avanços técnicos e dilemas éticos emergentes.",
+      "description": "Parceria contínua que fornece revisões trimestrais, avaliação de investimentos e monitoramento de riscos tecnológicos e regulatórios emergentes.",
       "deliverables": [
-        "Relatórios Trimestrais de Vigilância Tecnológica",
-        "Sessões de Revisão de Estratégia de IA",
-        "Acesso Prioritário a Especialistas em Segurança"
+        "Dashboard de Governança de IA",
+        "Registro de Riscos de IA",
+        "Insights Estratégicos de IA"
       ]
     }
   },
+  "About": {
+    "title": "Tuyo Isaza",
+    "subtitle": "Assessor Independente de Governança de IA",
+    "philosophy": {
+      "title": "Assessoria Independente",
+      "content": "A Inteligência Artificial não é uma implementação técnica; é uma mudança fundamental na governança corporativa. Meu trabalho garante que os Diretores de Conselho tenham a clareza, a linguagem e as estruturas independentes necessárias para supervisionar essa transição."
+    },
+    "bio": {
+      "title": "Resumo Executivo",
+      "content": "Tuyo Isaza é um estrategista de transformação que trabalha na interseção de liderança, cultura organizacional e adoção de inteligência artificial. Com mais de duas décadas de experiência em ambientes multinacionais, ele ajuda os líderes a preservar a clareza estratégica e o alinhamento organizacional durante as mudanças tecnológicas."
+    },
+    "experience": {
+      "title": "Histórico Profissional",
+      "content": "Colaborou com organizações globais na América Latina e nos Estados Unidos, assessorando marcas como Microsoft, McDonald's, Nokia, Citibank e Kellogg's. Tuyo é palestrante internacional, autor e assessor de liderança focado em inovação e mudanças impulsionadas pela tecnologia."
+    },
+    "cta": "Solicitar Sessão Executiva"
+  },
   "Pricing": {
-    "title": "Investimento em Governança",
-    "subtitle": "Programas projetados para a excelência na supervisão de IA.",
+    "title": "Investimento em Assessoria",
+    "subtitle": "Programas estratégicos projetados para a excelência na supervisão em nível de conselho.",
     "plans": {
       "briefing": "AI Board Briefing",
       "blueprint": "Governance Blueprint",
@@ -61,11 +86,11 @@
   },
   "Contact": {
     "title": "Contato Executivo",
-    "subtitle": "Inicie sua transformação de governança hoje mesmo.",
+    "subtitle": "Comunicação direta para solicitações de assessoria em nível de conselho.",
     "form": {
       "name": "Nome Completo",
       "email": "E-mail Corporativo",
-      "company": "Organização",
+      "company": "Organização / Conselho",
       "submit": "Enviar Solicitação"
     }
   }

@@ -1,40 +1,83 @@
 {
   "Index": {
-    "title": "AI Governance",
+    "title": "Tuyo Isaza | AI Governance Advisor",
     "hero": {
       "title": "Strategic Oversight for the AI Era",
-      "subtitle": "Equipping Corporate Directors and Executive Committees with the governance frameworks required to safely navigate and capitalize on Artificial Intelligence.",
-      "cta": "Explore Services"
+      "subtitle": "Independent advisory for Corporate Boards and Executive Committees. Building the governance frameworks required to safely navigate and capitalize on Artificial Intelligence.",
+      "cta": "Advisory Programs"
+    },
+    "challenge": {
+      "title": "The AI Governance Challenge",
+      "subtitle": "Boards are responsible for supervising AI, yet most lack the required strategic frameworks. This creates critical exposure.",
+      "content": "Tuyo helps boards build the strategic clarity and governance structures required to supervise AI, moving from isolated technical initiatives to a clear supervisory framework."
     }
   },
   "Header": {
-    "services": "SERVICES",
-    "pricing": "PRICING",
-    "advisors": "ADVISORS",
+    "brand": "TUYO ISAZA",
+    "services": "ADVISORY",
+    "pricing": "INVESTMENT",
+    "advisors": "EXPERIENCE",
     "insights": "INSIGHTS",
-    "about": "ABOUT",
-    "contact": "Request Briefing"
+    "about": "ABOUT TUYO",
+    "contact": "Secure Briefing"
   },
   "Services": {
     "briefing": {
       "title": "AI Board Briefing",
-      "duration": "3 hours",
-      "objective": "Strategic language and frameworks for boards."
+      "duration": "3-hour Strategic Session",
+      "objective": "Strategic language and frameworks for boards.",
+      "description": "Executive session designed for boards to understand the AI landscape, strategic implications, and the required oversight frameworks.",
+      "deliverables": [
+        "AI Board Memo",
+        "AI Risk & Opportunity Snapshot",
+        "Board AI Questions Framework"
+      ]
     },
     "blueprint": {
       "title": "AI Governance Blueprint",
-      "duration": "6-8 weeks",
-      "objective": "Design of a custom governance model."
+      "duration": "6-8 Week Program",
+      "objective": "Design of a custom governance model.",
+      "description": "Deep advisory process to establish policies, committees, and oversight procedures necessary for responsible and effective AI adoption.",
+      "deliverables": [
+        "AI Risk Map",
+        "AI Opportunity Map",
+        "AI Governance Framework",
+        "AI Investment Decision Framework",
+        "AI Strategic Roadmap"
+      ]
     },
     "advisor": {
       "title": "AI Board Advisor",
-      "duration": "Annual Retainer",
-      "objective": "Continuous strategic oversight."
+      "duration": "Retained Advisory",
+      "objective": "Continuous strategic oversight.",
+      "description": "Ongoing partnership providing quarterly reviews, investment evaluation, and monitoring of emerging technological and regulatory risks.",
+      "deliverables": [
+        "AI Governance Dashboard",
+        "AI Risk Register",
+        "Strategic AI Insights"
+      ]
     }
   },
+  "About": {
+    "title": "Tuyo Isaza",
+    "subtitle": "Independent AI Governance Advisor",
+    "philosophy": {
+      "title": "Independent Advisory",
+      "content": "Artificial Intelligence is not a technical implementation; it is a fundamental shift in corporate governance. My work ensures that Board Directors have the clarity, language, and independent frameworks required to supervise this transition."
+    },
+    "bio": {
+      "title": "Executive Summary",
+      "content": "Tuyo Isaza is a transformation strategist working at the intersection of leadership, organizational culture, and artificial intelligence adoption. With more than two decades of experience across multinational environments, he helps leaders preserve strategic clarity and organizational alignment during technological shifts."
+    },
+    "experience": {
+      "title": "Professional Record",
+      "content": "Collaborated with global organizations across Latin America and the United States, advising brands such as Microsoft, McDonald's, Nokia, Citibank, and Kellogg's. Tuyo is an international speaker, author, and leadership advisor focusing on innovation and technology-driven change."
+    },
+    "cta": "Request Executive Briefing"
+  },
   "Pricing": {
-    "title": "Governance Investment",
-    "subtitle": "Programs designed for excellence in AI oversight.",
+    "title": "Advisory Investment",
+    "subtitle": "Strategic programs designed for board-level oversight excellence.",
     "plans": {
       "briefing": "AI Board Briefing",
       "blueprint": "Governance Blueprint",
@@ -43,24 +86,12 @@
   },
   "Contact": {
     "title": "Executive Contact",
-    "subtitle": "Begin your governance transformation today.",
+    "subtitle": "Direct communication for board-level advisory requests.",
     "form": {
       "name": "Full Name",
       "email": "Corporate Email",
-      "company": "Organization",
+      "company": "Organization / Board",
       "submit": "Submit Request"
     }
-  },
-  "About": {
-    "title": "The Firm",
-    "philosophy": {
-      "title": "Our Philosophy",
-      "content": "We believe that Artificial Intelligence is not just a technology implementation, but a fundamental shift in corporate governance. Our mission is to ensure that Board Directors have the clarity, language, and frameworks required to supervise this transition effectively."
-    },
-    "authority": {
-      "title": "Independence & Authority",
-      "content": "Remaining vendor-agnostic is the cornerstone of our advisory. We do not sell software; we provide strategic oversight. This independence allows us to offer unbiased evaluations of AI investments and risk landscapes."
-    },
-    "cta": "Meet Our Partners"
   }
 }
