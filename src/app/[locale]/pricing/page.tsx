@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { CheckCircle2, TrendingUp, Shield, Zap } from "lucide-react";
-import { Link } from "@/routing";
+import { Link } from "@/i18n/routing";
 
 export default function PricingPage() {
   const t = useTranslations("Pricing");

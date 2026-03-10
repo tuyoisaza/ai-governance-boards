@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@/routing";
+import { Link } from "@/i18n/routing";
 import { ArrowRight, Globe, Zap, ShieldCheck, MessageSquare } from "lucide-react";
 import { useTranslations } from "next-intl";
 

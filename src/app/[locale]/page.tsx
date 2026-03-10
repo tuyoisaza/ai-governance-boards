@@ -1,4 +1,4 @@
-import { Link } from "@/routing";
+import { Link } from "@/i18n/routing";
 import { ArrowRight, ShieldCheck, BarChart3, Shield, Zap, Globe, MessageSquare } from "lucide-react";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { useTranslations } from "next-intl";

@@ -1,4 +1,4 @@
-import { Link } from "@/routing";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { Award, BookOpen, Globe, Mic2, Shield } from "lucide-react";
 
