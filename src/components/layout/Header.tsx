@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@/i18n/routing";
+import { Link } from "@/routing";
 import { Diamond } from "lucide-react";
 import LanguageSelector from "../LanguageSelector";
 import { useTranslations } from "next-intl";

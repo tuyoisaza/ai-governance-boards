@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/routing";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 

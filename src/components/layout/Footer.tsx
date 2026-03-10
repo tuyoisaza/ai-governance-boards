@@ -1,4 +1,4 @@
-import { Link } from "@/i18n/routing";
+import { Link } from "@/routing";
 import { Diamond, Mail, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
