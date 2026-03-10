@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function LeadCaptureForm({ variant = "default" }: { variant?: "default" | "dark" }) {
+  const t = useTranslations("Contact.form");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -53,36 +55,33 @@ export default function LeadCaptureForm({ variant = "default" }: { variant?: "de
 
       <div className="space-y-4">
         <div>
-          <label htmlFor="name" className="block text-xs font-medium tracking-widest uppercase text-[var(--color-muted)] mb-2">Full Name</label>
+          <label htmlFor="name" className="block text-xs font-medium tracking-widest uppercase text-[var(--color-muted)] mb-2">{t("name")}</label>
           <input
             required
             id="name"
             name="name"
             type="text"
             className="w-full bg-[var(--color-primary)] border border-[var(--color-border)] px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
-            placeholder="Executive Director"
           />
         </div>
         <div>
-          <label htmlFor="company" className="block text-xs font-medium tracking-widest uppercase text-[var(--color-muted)] mb-2">Organization / Board</label>
+          <label htmlFor="company" className="block text-xs font-medium tracking-widest uppercase text-[var(--color-muted)] mb-2">{t("company")}</label>
           <input
             required
             id="company"
             name="company"
             type="text"
-            className="w-full bg-[var(--color-primary)] border border-[var(--color-border)] px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
-            placeholder="Global Enterprises Inc."
+            className="w-full bg-[var(--color-primary)] border border(--color-border)] px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-xs font-medium tracking-widest uppercase text-[var(--color-muted)] mb-2">Corporate Email</label>
+          <label htmlFor="email" className="block text-xs font-medium tracking-widest uppercase text-[var(--color-muted)] mb-2">{t("email")}</label>
           <input
             required
             id="email"
             name="email"
             type="email"
             className="w-full bg-[var(--color-primary)] border border-[var(--color-border)] px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
-            placeholder="director@company.com"
           />
         </div>
       </div>
@@ -92,7 +91,7 @@ export default function LeadCaptureForm({ variant = "default" }: { variant?: "de
         disabled={status === "loading"}
         className="mt-4 w-full group flex items-center justify-between bg-[var(--color-foreground)] text-[var(--color-primary)] px-6 py-4 font-medium hover:bg-[var(--color-accent)] transition-all disabled:opacity-70 disabled:cursor-not-allowed"
       >
-        <span className="tracking-widest uppercase text-xs font-bold">{status === "loading" ? "Processing..." : "Submit Request"}</span>
+        <span className="tracking-widest uppercase text-xs font-bold">{status === "loading" ? "Processing..." : t("submit")}</span>
         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </button>
 

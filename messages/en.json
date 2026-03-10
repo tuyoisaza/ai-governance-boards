@@ -1,0 +1,66 @@
+{
+  "Index": {
+    "title": "AI Governance",
+    "hero": {
+      "title": "Strategic Oversight for the AI Era",
+      "subtitle": "Equipping Corporate Directors and Executive Committees with the governance frameworks required to safely navigate and capitalize on Artificial Intelligence.",
+      "cta": "Explore Services"
+    }
+  },
+  "Header": {
+    "services": "SERVICES",
+    "pricing": "PRICING",
+    "advisors": "ADVISORS",
+    "insights": "INSIGHTS",
+    "about": "ABOUT",
+    "contact": "Request Briefing"
+  },
+  "Services": {
+    "briefing": {
+      "title": "AI Board Briefing",
+      "duration": "3 hours",
+      "objective": "Strategic language and frameworks for boards."
+    },
+    "blueprint": {
+      "title": "AI Governance Blueprint",
+      "duration": "6-8 weeks",
+      "objective": "Design of a custom governance model."
+    },
+    "advisor": {
+      "title": "AI Board Advisor",
+      "duration": "Annual Retainer",
+      "objective": "Continuous strategic oversight."
+    }
+  },
+  "Pricing": {
+    "title": "Governance Investment",
+    "subtitle": "Programs designed for excellence in AI oversight.",
+    "plans": {
+      "briefing": "AI Board Briefing",
+      "blueprint": "Governance Blueprint",
+      "advisor": "Board Advisor"
+    }
+  },
+  "Contact": {
+    "title": "Executive Contact",
+    "subtitle": "Begin your governance transformation today.",
+    "form": {
+      "name": "Full Name",
+      "email": "Corporate Email",
+      "company": "Organization",
+      "submit": "Submit Request"
+    }
+  },
+  "About": {
+    "title": "The Firm",
+    "philosophy": {
+      "title": "Our Philosophy",
+      "content": "We believe that Artificial Intelligence is not just a technology implementation, but a fundamental shift in corporate governance. Our mission is to ensure that Board Directors have the clarity, language, and frameworks required to supervise this transition effectively."
+    },
+    "authority": {
+      "title": "Independence & Authority",
+      "content": "Remaining vendor-agnostic is the cornerstone of our advisory. We do not sell software; we provide strategic oversight. This independence allows us to offer unbiased evaluations of AI investments and risk landscapes."
+    },
+    "cta": "Meet Our Partners"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "Index": {
+    "title": "Governança de IA",
+    "hero": {
+      "title": "Supervisão Estratégica para a Era da IA",
+      "subtitle": "Capacitando Diretores Corporativos e Comitês Executivos com as estruturas de governança necessárias para navegar e capitalizar com segurança a Inteligência Artificial.",
+      "cta": "Explorar Serviços"
+    }
+  },
+  "Header": {
+    "services": "SERVIÇOS",
+    "pricing": "PREÇOS",
+    "advisors": "CONSELHEIROS",
+    "insights": "INSIGHTS",
+    "about": "SOBRE",
+    "contact": "Agendar Sessão"
+  },
+  "Services": {
+    "briefing": {
+      "title": "AI Board Briefing",
+      "duration": "Sessão de 3 horas",
+      "objective": "Linguagem e estruturas estratégicas para conselhos.",
+      "description": "Sessão executiva projetada para que os conselhos de administração compreendam o panorama da IA, seus riscos estratégicos e as oportunidades de governança.",
+      "deliverables": [
+        "Estrutura de Decisão de IA para Conselhos",
+        "Matriz de Riscos e Oportunidades",
+        "Glossário Executivo de Termos de IA"
+      ]
+    },
+    "blueprint": {
+      "title": "AI Governance Blueprint",
+      "duration": "Programa de 6-8 semanas",
+      "objective": "Design de um modelo de governança sob medida.",
+      "description": "Consultoria profunda para estabelecer as políticas, comitês e processos de supervisão necessários para uma IA responsável e eficaz.",
+      "deliverables": [
+        "Manual de Governança de IA Corporativa",
+        "Constituição do Comitê de Ética de IA",
+        "Plano de Auditoria de Sistemas de IA"
+      ]
+    },
+    "advisor": {
+      "title": "AI Board Advisor",
+      "duration": "Acompanhamento Anual",
+      "objective": "Supervisão estratégica contínua.",
+      "description": "Assessoria permanente para manter o conselho atualizado sobre mudanças regulatórias, avanços técnicos e dilemas éticos emergentes.",
+      "deliverables": [
+        "Relatórios Trimestrais de Vigilância Tecnológica",
+        "Sessões de Revisão de Estratégia de IA",
+        "Acesso Prioritário a Especialistas em Segurança"
+      ]
+    }
+  },
+  "Pricing": {
+    "title": "Investimento em Governança",
+    "subtitle": "Programas projetados para a excelência na supervisão de IA.",
+    "plans": {
+      "briefing": "AI Board Briefing",
+      "blueprint": "Governance Blueprint",
+      "advisor": "Board Advisor"
+    }
+  },
+  "Contact": {
+    "title": "Contato Executivo",
+    "subtitle": "Inicie sua transformação de governança hoje mesmo.",
+    "form": {
+      "name": "Nome Completo",
+      "email": "E-mail Corporativo",
+      "company": "Organização",
+      "submit": "Enviar Solicitação"
+    }
+  }
+}
