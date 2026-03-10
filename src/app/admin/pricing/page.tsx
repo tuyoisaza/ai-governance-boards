@@ -1,12 +1,10 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { Plus } from "lucide-react";
 
 export const metadata = { title: "Manage Pricing Plans" };
 
 export default async function AdminPricingPage() {
-  const prisma = new PrismaClient();
-  const plans = await prisma.pricingPlan.findMany({ orderBy: { createdAt: 'asc' } });
-  await prisma.$disconnect();
+  const plans = await prisma.pricingPlan.findMany({ orderBy: { createdAt: 'desc' } });
 
   return (
     <div>

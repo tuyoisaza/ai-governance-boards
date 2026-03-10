@@ -1,10 +1,9 @@
 import { NextResponse } from "next/server";
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
-  const prisma = new PrismaClient();
   try {
     const body = await req.json();
     const { name, email, company } = body;
@@ -26,7 +25,5 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("Lead creation failed:", error);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
-  } finally {
-    await prisma.$disconnect();
   }
 }

@@ -1,15 +1,13 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { Download } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = { title: "Leads Management" };
 
 export default async function LeadsPage() {
-  const prisma = new PrismaClient();
   const leads = await prisma.lead.findMany({
     orderBy: { createdAt: 'desc' }
   });
-  await prisma.$disconnect();
 
   return (
     <div>

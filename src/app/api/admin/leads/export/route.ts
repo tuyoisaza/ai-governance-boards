@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 
@@ -12,8 +12,6 @@ export async function GET() {
   if (!session?.user?.email || !adminEmails.includes(session.user.email)) {
     return new NextResponse("Unauthorized", { status: 401 });
   }
-
-  const prisma = new PrismaClient();
   
   try {
     const leads = await prisma.lead.findMany({
@@ -46,7 +44,5 @@ export async function GET() {
   } catch (error) {
     console.error("Export failed", error);
     return new NextResponse("Internal Server Error", { status: 500 });
-  } finally {
-    await prisma.$disconnect();
   }
 }

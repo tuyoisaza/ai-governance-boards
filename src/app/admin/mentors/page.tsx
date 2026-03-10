@@ -1,12 +1,10 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { Plus } from "lucide-react";
 
 export const metadata = { title: "Manage Advisory Team" };
 
 export default async function AdminMentorsPage() {
-  const prisma = new PrismaClient();
   const mentors = await prisma.mentor.findMany({ orderBy: { createdAt: 'desc' } });
-  await prisma.$disconnect();
 
   return (
     <div>

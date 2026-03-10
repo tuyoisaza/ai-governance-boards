@@ -1,12 +1,10 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { Plus } from "lucide-react";
 
 export const metadata = { title: "Manage Intelligence & Blog" };
 
 export default async function AdminBlogPage() {
-  const prisma = new PrismaClient();
   const posts = await prisma.blogPost.findMany({ orderBy: { createdAt: 'desc' } });
-  await prisma.$disconnect();
 
   return (
     <div>

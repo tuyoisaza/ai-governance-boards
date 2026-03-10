@@ -1,12 +1,10 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/lib/prisma";
 import { Plus } from "lucide-react";
 
 export const metadata = { title: "Manage Services" };
 
 export default async function AdminServicesPage() {
-  const prisma = new PrismaClient();
   const services = await prisma.service.findMany({ orderBy: { createdAt: 'desc' } });
-  await prisma.$disconnect();
 
   return (
     <div>
