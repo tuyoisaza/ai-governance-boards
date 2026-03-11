@@ -1,68 +1,15 @@
 {
   "Index": {
-    "title": "Tuyo Isaza | Facilitação Estratégica para Conselhos de Administração",
+    "title": "Tuyo Isaza | Consultor de Governança de IA",
     "hero": {
-      "headline": "Conselhos de Administração que alinham decisões estratégicas",
-      "subheadline": "Facilitação profissional para diretórios, acionistas e family offices.",
-      "outcomes": [
-        "Decisões mais rápidas",
-        "Alinhamento entre sócios",
-        "Conflitos produtivos"
-      ],
-      "cta": "Solicitar conversa"
+      "title": "Supervisão Estratégica para a Era da IA",
+      "subtitle": "Assessoria independente para Conselhos de Administração e Comitês Executivos. Construindo as estruturas de governança necessárias para navegar e capitalizar com segurança a Inteligência Artificial.",
+      "cta": "Programas de Assessoria"
     },
-    "problem": {
-      "headline": "Problemas comuns em conselhos de administração",
-      "points": [
-        "Decisões que são adiadas",
-        "Conflitos entre sócios ou acionistas",
-        "Falta de clareza estratégica",
-        "Reuniões longas sem resultados"
-      ],
-      "supporting": "Abordamos as fricções estruturais que impedem o progresso organizacional."
-    },
-    "solution": {
-      "headline": "Como facilitamos conselhos eficazes",
-      "steps": [
-        {
-          "title": "Preparação estratégica",
-          "desc": "Alinhamento prévio com os líderes para definir objetivos críticos."
-        },
-        {
-          "title": "Facilitação estruturada",
-          "desc": "Condução da reunião focada em resolver bloqueios e gerar consenso."
-        },
-        {
-          "title": "Alinhamento e decisões",
-          "desc": "Encerramento com compromissos claros e decisões 100% acionáveis."
-        }
-      ]
-    },
-    "results": {
-      "headline": "Resultados que alcançamos",
-      "points": [
-        "Alinhamento estratégico entre sócios",
-        "Decisões acionáveis",
-        "Clareza de papéis",
-        "Conflitos produtivos"
-      ]
-    },
-    "trust": {
-      "results_title": "Resultados típicos",
-      "testimonial": {
-        "text": "A intervenção de Tuyo foi fundamental para desbloquear uma transição geracional em nosso conselho.",
-        "author": "Diretor Geral",
-        "role": "Family Office Leader"
-      }
-    },
-    "method": {
-      "headline": "Nosso processo",
-      "steps": ["Preparação", "Facilitação", "Alinhamento"]
-    },
-    "cta_final": {
-      "headline": "Quer melhorar a eficácia do seu conselho?",
-      "primary": "Agendar conversa",
-      "secondary": "Contatar"
+    "challenge": {
+      "title": "O Desafio da Governança de IA",
+      "subtitle": "Os Conselhos são responsáveis por supervisionar a IA, mas a maioria carece das estruturas estratégicas necessárias. Isso cria uma exposição crítica.",
+      "content": "Tuyo ajuda os conselhos a construir a clareza estratégica e as estruturas de governança necessárias para supervisionar a IA, passando de iniciativas técnicas isoladas para uma estrutura de supervisão clara."
     }
   },
   "Header": {
