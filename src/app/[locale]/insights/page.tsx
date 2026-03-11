@@ -1,12 +1,13 @@
 import { Link } from "@/i18n/routing";
 import { ArrowRight, FileText } from "lucide-react";
+import prisma from "@/lib/prisma";
 
 export const metadata = {
   title: "Executive Insights & Playbooks | AI Governance",
   description: "Playbooks, frameworks, and critical insights on AI risk and strategy for corporate boards.",
 };
 
-const insights = [
+const staticInsights = [
   {
     category: "Playbook",
     title: "AI Governance Questions for Boards",
@@ -33,7 +34,20 @@ const insights = [
   }
 ];
 
-export default function InsightsPage() {
+export default async function InsightsPage() {
+  const dbPosts = await prisma.blogPost.findMany({
+    where: { published: true },
+    orderBy: { createdAt: 'desc' }
+  });
+
+  const insights = dbPosts.length > 0 
+    ? dbPosts.map(p => ({
+        category: "Insight",
+        title: p.title,
+        description: p.content.substring(0, 160) + "...",
+        date: new Date(p.createdAt).toLocaleDateString()
+      }))
+    : staticInsights;
   return (
     <div className="py-24">
       <div className="container mx-auto px-6 max-w-5xl">
