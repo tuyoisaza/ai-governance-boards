@@ -2,6 +2,8 @@ import { Link } from "@/i18n/routing";
 import { ArrowRight, FileText } from "lucide-react";
 import prisma from "@/lib/prisma";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Executive Insights & Playbooks | AI Governance",
   description: "Playbooks, frameworks, and critical insights on AI risk and strategy for corporate boards.",
@@ -34,11 +36,18 @@ const staticInsights = [
   }
 ];
 
-export default async function InsightsPage() {
-  const dbPosts = await prisma.blogPost.findMany({
-    where: { published: true },
-    orderBy: { createdAt: 'desc' }
-  });
+export default async function InsightsPage({ params }: { params: Promise<{ locale: string }> }) {
+  await params;
+  let dbPosts: any[] = [];
+  
+  try {
+    dbPosts = await prisma.blogPost.findMany({
+      where: { published: true },
+      orderBy: { createdAt: 'desc' }
+    });
+  } catch (error) {
+    console.error("Failed to fetch insights from database:", error);
+  }
 
   const insights = dbPosts.length > 0 
     ? dbPosts.map(p => ({
