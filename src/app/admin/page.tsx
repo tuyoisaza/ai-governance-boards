@@ -12,9 +12,7 @@ export default async function AdminDashboard() {
   ]);
 
   const stats = [
-    { label: "Total Leads", value: leadsCount, icon: <Users className="w-5 h-5" /> },
-    { label: "Published Insights", value: postsCount, icon: <FileText className="w-5 h-5" /> },
-    { label: "Active Services", value: "3", icon: <Settings className="w-5 h-5" /> },
+    { label: "Advisory Team", value: advisorsCount, icon: <Users className="w-5 h-5" /> },
     { label: "Platform Uptime", value: "99.9%", icon: <AreaChart className="w-5 h-5" /> },
   ];
 

@@ -1,10 +1,12 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
+import prisma from "@/lib/prisma";
+import { Linkedin, Twitter } from "lucide-react";
 
-export default function MentorsPage() {
-  const t = useTranslations("About");
+export default async function MentorsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "About" });
+  const advisors = await prisma.advisor.findMany({ orderBy: { createdAt: 'desc' } });
 
   return (
     <div className="py-24">
@@ -18,25 +20,39 @@ export default function MentorsPage() {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16">
-          <div className="p-12 border border-[var(--color-border)] bg-[var(--color-secondary)]/5 space-y-10">
-             <div className="space-y-4">
-                <h3 className="font-serif text-4xl font-bold text-[var(--color-accent)]">20+</h3>
-                <p className="text-sm font-bold uppercase tracking-widest text-[var(--color-muted)]">Years in Strategic Transformation</p>
-             </div>
-             <p className="text-[var(--color-muted)] leading-relaxed text-lg">
-               Working across multiple economic cycles and technological shifts, Tuyo has consistently helped organizations navigate complexity through strategic clarity.
-             </p>
-          </div>
-
-          <div className="p-12 border border-[var(--color-border)] space-y-10">
-             <div className="space-y-4">
-                <h3 className="font-serif text-4xl font-bold text-[var(--color-accent)]">Global</h3>
-                <p className="text-sm font-bold uppercase tracking-widest text-[var(--color-muted)]">Operations Experience</p>
-             </div>
-             <p className="text-[var(--color-muted)] leading-relaxed text-lg">
-               Experience managing and advising digital strategies for brands in more than 15 countries across Latin America and North America.
-             </p>
-          </div>
+          {advisors.length === 0 ? (
+            <div className="p-12 border border-[var(--color-border)] bg-[var(--color-secondary)]/5 space-y-10">
+               <div className="space-y-4">
+                  <h3 className="font-serif text-4xl font-bold text-[var(--color-accent)]">20+</h3>
+                  <p className="text-sm font-bold uppercase tracking-widest text-[var(--color-muted)]">Years in Strategic Transformation</p>
+               </div>
+               <p className="text-[var(--color-muted)] leading-relaxed text-lg">
+                 Working across multiple economic cycles and technological shifts, Tuyo has consistently helped organizations navigate complexity through strategic clarity.
+               </p>
+            </div>
+          ) : advisors.map(advisor => (
+            <div key={advisor.id} className="p-12 border border-[var(--color-border)] space-y-8 flex flex-col">
+               <div className="space-y-4">
+                  <h3 className="font-serif text-4xl font-bold text-[var(--color-accent)]">{advisor.name}</h3>
+                  <p className="text-sm font-bold uppercase tracking-widest text-[var(--color-muted)]">{advisor.title}</p>
+               </div>
+               <p className="text-[var(--color-muted)] leading-relaxed text-lg flex-1">
+                 {advisor.bio}
+               </p>
+               <div className="flex gap-6 pt-6 border-t border-[var(--color-border)]">
+                 {advisor.linkedinUrl && (
+                   <a href={advisor.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors">
+                     <Linkedin className="w-5 h-5" />
+                   </a>
+                 )}
+                 {advisor.twitterUrl && (
+                   <a href={advisor.twitterUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors">
+                     <Twitter className="w-5 h-5" />
+                   </a>
+                 )}
+               </div>
+            </div>
+          ))}
         </div>
 
         <div className="mt-24 space-y-12">

@@ -41,7 +41,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           <Link href="/admin/pricing" className="flex items-center gap-3 px-3 py-2 text-sm text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-secondary)]/30 transition-colors rounded">
             <Settings className="w-4 h-4" /> Pricing Plans
           </Link>
-          <Link href="/admin/mentors" className="flex items-center gap-3 px-3 py-2 text-sm text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-secondary)]/30 transition-colors rounded">
+          <Link href="/admin/advisors" className="flex items-center gap-3 px-3 py-2 text-sm text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-secondary)]/30 transition-colors rounded">
             <BookOpen className="w-4 h-4" /> Advisory Team
           </Link>
           <Link href="/admin/blog" className="flex items-center gap-3 px-3 py-2 text-sm text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-secondary)]/30 transition-colors rounded">

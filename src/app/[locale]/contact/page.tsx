@@ -31,7 +31,14 @@ export default async function ContactPage({
             <div className="grid sm:grid-cols-2 gap-12 pt-12 border-t border-[var(--color-border)]">
               <div>
                 <h4 className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">Direct Channel</h4>
-                <p className="text-sm font-bold tracking-widest text-[var(--color-muted)] uppercase">advisory@tuyoisaza.com</p>
+                <div className="space-y-2">
+                  <a href="mailto:advisory@tuyoisaza.com" className="block text-sm font-bold tracking-widest text-[var(--color-muted)] uppercase hover:text-[var(--color-accent)] transition-colors">
+                    advisory@tuyoisaza.com
+                  </a>
+                  <a href="https://wa.me/525534583291" target="_blank" rel="noopener noreferrer" className="block text-xs font-bold tracking-[0.2em] text-[var(--color-accent)] uppercase hover:underline">
+                    WhatsApp: +52 55 3458 3291
+                  </a>
+                </div>
               </div>
               <div>
                 <h4 className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">Institutional Location</h4>
