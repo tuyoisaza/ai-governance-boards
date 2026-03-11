@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { ArrowRight, FileText } from "lucide-react";
 
 export const metadata = {
@@ -57,7 +57,13 @@ export default function InsightsPage() {
               <p className="text-sm text-[var(--color-muted)] leading-relaxed mb-8 flex-1">{insight.description}</p>
               
               <div className="mt-auto border-t border-[var(--color-border)] pt-6">
-                <Link href="/contact" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[var(--color-foreground)] hover:text-[var(--color-accent)] transition-colors">
+                <Link 
+                  href={{
+                    pathname: "/contact",
+                    query: { interest: `Report: ${insight.title}` }
+                  }} 
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[var(--color-foreground)] hover:text-[var(--color-accent)] transition-colors"
+                >
                   Request Full Report <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

@@ -29,6 +29,7 @@ export default async function LeadsPage() {
                 <th className="px-6 py-4 font-medium">Date</th>
                 <th className="px-6 py-4 font-medium">Name</th>
                 <th className="px-6 py-4 font-medium">Organization</th>
+                <th className="px-6 py-4 font-medium">Interest</th>
                 <th className="px-6 py-4 font-medium">Email</th>
                 <th className="px-6 py-4 font-medium">Status</th>
               </tr>
@@ -36,13 +37,14 @@ export default async function LeadsPage() {
             <tbody className="divide-y divide-[var(--color-border)]">
               {leads.length === 0 ? (
                 <tr>
-                  <td colSpan={5} className="px-6 py-12 text-center text-[var(--color-muted)]">No leads recorded yet.</td>
+                  <td colSpan={6} className="px-6 py-12 text-center text-[var(--color-muted)]">No leads recorded yet.</td>
                 </tr>
               ) : leads.map((lead) => (
                 <tr key={lead.id} className="hover:bg-[var(--color-secondary)]/10 transition-colors">
                   <td className="px-6 py-4">{new Date(lead.createdAt).toLocaleDateString()}</td>
                   <td className="px-6 py-4 font-medium">{lead.name}</td>
                   <td className="px-6 py-4">{lead.company}</td>
+                  <td className="px-6 py-4 max-w-xs truncate" title={lead.interest || ""}>{lead.interest || "-"}</td>
                   <td className="px-6 py-4 text-[var(--color-muted)]">{lead.email}</td>
                   <td className="px-6 py-4">
                     <span className={`px-2 py-1 text-xs font-bold uppercase tracking-widest ${

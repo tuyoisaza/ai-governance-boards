@@ -114,7 +114,13 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                    </p>
                 </div>
 
-                <Link href="/contact" className="block w-full text-center bg-[var(--color-foreground)] text-[var(--color-primary)] py-5 font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-[var(--color-accent)] transition-all">
+                <Link 
+                  href={{
+                    pathname: "/contact",
+                    query: { interest: `Case Study: ${title}` }
+                  }} 
+                  className="block w-full text-center bg-[var(--color-foreground)] text-[var(--color-primary)] py-5 font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-[var(--color-accent)] transition-all"
+                >
                   Request Case Study
                 </Link>
              </div>

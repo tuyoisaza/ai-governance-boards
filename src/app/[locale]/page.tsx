@@ -154,7 +154,13 @@ export default function Home() {
           <p className="text-[var(--color-muted)] text-xl max-w-2xl leading-relaxed">
             Direct advisory requests are handled with strict confidentiality. Reach out to schedule a preliminary synchronization session.
           </p>
-          <Link href="/contact" className="bg-[var(--color-foreground)] text-[var(--color-primary)] px-16 py-5 font-bold text-xs uppercase tracking-[0.2em] hover:bg-[var(--color-accent)] transition-all">
+          <Link 
+            href={{
+              pathname: "/contact",
+              query: { interest: "General Board Advisory" }
+            }} 
+            className="bg-[var(--color-foreground)] text-[var(--color-primary)] px-16 py-5 font-bold text-xs uppercase tracking-[0.2em] hover:bg-[var(--color-accent)] transition-all"
+          >
             Initiate Contact
           </Link>
         </div>

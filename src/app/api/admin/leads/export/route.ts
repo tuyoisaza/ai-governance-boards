@@ -19,7 +19,7 @@ export async function GET() {
     });
     
     // Create CSV header
-    let csv = "ID,Name,Email,Organization,Status,Date\n";
+    let csv = "ID,Name,Email,Organization,Interest,Status,Date\n";
     
     // Add rows
     leads.forEach(lead => {
@@ -29,6 +29,7 @@ export async function GET() {
         `"${lead.name.replace(/"/g, '""')}"`,
         `"${lead.email.replace(/"/g, '""')}"`,
         `"${lead.company.replace(/"/g, '""')}"`,
+        `"${(lead.interest || "").replace(/"/g, '""')}"`,
         lead.status,
         lead.createdAt.toISOString()
       ];

@@ -38,7 +38,13 @@ export default function PricingPage() {
                 ))}
               </ul>
 
-              <Link href="/contact" className={`w-full py-5 text-[10px] font-bold uppercase tracking-[0.3em] transition-all text-center ${plan.highlight ? 'bg-[var(--color-accent)] text-[var(--color-primary)]' : 'bg-[var(--color-foreground)] text-[var(--color-primary)]'}`}>
+              <Link 
+                href={{
+                  pathname: "/contact",
+                  query: { interest: `Pricing Plan: ${t(`plans.${plan.id}`)}` }
+                }} 
+                className={`w-full py-5 text-[10px] font-bold uppercase tracking-[0.3em] transition-all text-center ${plan.highlight ? 'bg-[var(--color-accent)] text-[var(--color-primary)]' : 'bg-[var(--color-foreground)] text-[var(--color-primary)]'}`}
+              >
                 Schedule Synchrony
               </Link>
             </div>

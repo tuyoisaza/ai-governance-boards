@@ -4,7 +4,13 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-export default function LeadCaptureForm({ variant = "default" }: { variant?: "default" | "dark" }) {
+export default function LeadCaptureForm({ 
+  variant = "default",
+  defaultInterest = ""
+}: { 
+  variant?: "default" | "dark",
+  defaultInterest?: string
+}) {
   const t = useTranslations("Contact.form");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -17,6 +23,7 @@ export default function LeadCaptureForm({ variant = "default" }: { variant?: "de
       name: formData.get("name"),
       email: formData.get("email"),
       company: formData.get("company"),
+      interest: formData.get("interest") || defaultInterest,
     };
 
     try {
@@ -82,6 +89,17 @@ export default function LeadCaptureForm({ variant = "default" }: { variant?: "de
             name="email"
             type="email"
             className="w-full bg-[var(--color-primary)] border border-[var(--color-border)] px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
+          />
+        </div>
+        <div>
+          <label htmlFor="interest" className="block text-xs font-medium tracking-widest uppercase text-[var(--color-muted)] mb-2">Interest / Specific Request</label>
+          <textarea
+            id="interest"
+            name="interest"
+            defaultValue={defaultInterest}
+            rows={3}
+            className="w-full bg-[var(--color-primary)] border border-[var(--color-border)] px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors resize-none"
+            placeholder="Tell us about your board's specific needs..."
           />
         </div>
       </div>
