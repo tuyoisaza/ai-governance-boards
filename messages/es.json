@@ -1,15 +1,68 @@
 {
   "Index": {
-    "title": "Tuyo Isaza | Asesor de Gobernanza de IA",
+    "title": "Tuyo Isaza | Facilitación Estratégica para Juntas Directivas",
     "hero": {
-      "title": "Supervisión Estratégica para la Era de la IA",
-      "subtitle": "Asesoría independiente para Juntas Directivas y Comités Ejecutivos. Construyendo los marcos de gobernanza necesarios para navegar y capitalizar con seguridad la Inteligencia Artificial.",
-      "cta": "Programas de Asesoría"
+      "headline": "Juntas Directivas que alinean decisiones estratégicas",
+      "subheadline": "Facilitación profesional para directorios, accionistas y family offices.",
+      "outcomes": [
+        "Decisiones más rápidas",
+        "Alineación entre socios",
+        "Conflictos productivos"
+      ],
+      "cta": "Solicitar conversación"
     },
-    "challenge": {
-      "title": "El Desafio de la Gobernanza de IA",
-      "subtitle": "Las Juntas son responsables de supervisar la IA, sin embargo, la mayoría carece de los marcos estratégicos requeridos. Esto crea una exposición crítica.",
-      "content": "Tuyo ayuda a las juntas a construir la claridad estratégica y las estructuras de gobernanza necesarias para supervisar la IA, pasando de iniciativas técnicas aisladas a un marco de supervisión claro."
+    "problem": {
+      "headline": "Problemas comunes en juntas directivas",
+      "points": [
+        "Decisiones que se postergan",
+        "Conflictos entre socios o accionistas",
+        "Falta de claridad estratégica",
+        "Reuniones largas sin resultados"
+      ],
+      "supporting": "Abordamos las fricciones estructurales que impiden el progreso organizacional."
+    },
+    "solution": {
+      "headline": "Cómo facilitamos juntas directivas efectivas",
+      "steps": [
+        {
+          "title": "Preparación estratégica",
+          "desc": "Alineación previa con los líderes para definir objetivos críticos."
+        },
+        {
+          "title": "Facilitación estructurada",
+          "desc": "Conducción de la reunión enfocada en resolver bloqueos y generar consenso."
+        },
+        {
+          "title": "Alineación y decisiones",
+          "desc": "Cierre con compromisos claros y decisiones 100% accionables."
+        }
+      ]
+    },
+    "results": {
+      "headline": "Resultados que logramos",
+      "points": [
+        "Alineación estratégica entre socios",
+        "Decisiones accionables",
+        "Claridad de roles",
+        "Conflictos productivos"
+      ]
+    },
+    "trust": {
+      "results_title": "Resultados típicos",
+      "testimonial": {
+        "text": "La intervención de Tuyo fue fundamental para desbloquear una transición generacional en nuestra junta.",
+        "author": "Director General",
+        "role": "Family Office Leader"
+      }
+    },
+    "method": {
+      "headline": "Nuestro proceso",
+      "steps": ["Preparación", "Facilitación", "Alineación"]
+    },
+    "cta_final": {
+      "headline": "¿Quieres mejorar la efectividad de tu junta directiva?",
+      "primary": "Agendar conversación",
+      "secondary": "Contactar"
     }
   },
   "Header": {

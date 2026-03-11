@@ -1,15 +1,68 @@
 {
   "Index": {
-    "title": "Tuyo Isaza | AI Governance Advisor",
+    "title": "Tuyo Isaza | Strategic Board Facilitation",
     "hero": {
-      "title": "Strategic Oversight for the AI Era",
-      "subtitle": "Independent advisory for Corporate Boards and Executive Committees. Building the governance frameworks required to safely navigate and capitalize on Artificial Intelligence.",
-      "cta": "Advisory Programs"
+      "headline": "Board Sessions that Align Strategic Decisions",
+      "subheadline": "Professional facilitation for boards, shareholders, and family offices.",
+      "outcomes": [
+        "Faster decision-making",
+        "Partner alignment",
+        "Productive conflict"
+      ],
+      "cta": "Request Conversation"
     },
-    "challenge": {
-      "title": "The AI Governance Challenge",
-      "subtitle": "Boards are responsible for supervising AI, yet most lack the required strategic frameworks. This creates critical exposure.",
-      "content": "Tuyo helps boards build the strategic clarity and governance structures required to supervise AI, moving from isolated technical initiatives to a clear supervisory framework."
+    "problem": {
+      "headline": "Common Challenges in Board Rooms",
+      "points": [
+        "Decisions that keep getting postponed",
+        "Conflicts between partners or shareholders",
+        "Lack of strategic clarity",
+        "Long meetings without results"
+      ],
+      "supporting": "We address the structural frictions that stall organizational progress."
+    },
+    "solution": {
+      "headline": "How We Enable Effective Board Sessions",
+      "steps": [
+        {
+          "title": "Strategic Preparation",
+          "desc": "Pre-alignment with leaders to define critical objectives."
+        },
+        {
+          "title": "Structured Facilitation",
+          "desc": "Driving the session focused on resolving blocks and generating consensus."
+        },
+        {
+          "title": "Alignment & Actions",
+          "desc": "Closing with clear commitments and 100% actionable decisions."
+        }
+      ]
+    },
+    "results": {
+      "headline": "Outcomes We Deliver",
+      "points": [
+        "Strategic partner alignment",
+        "Actionable decisions",
+        "Role clarity",
+        "Productive conflict management"
+      ]
+    },
+    "trust": {
+      "results_title": "Typical Results",
+      "testimonial": {
+        "text": "Tuyo's intervention was instrumental in unblocking a generational transition in our board.",
+        "author": "Managing Director",
+        "role": "Family Office Leader"
+      }
+    },
+    "method": {
+      "headline": "Our Process",
+      "steps": ["Preparation", "Facilitation", "Alignment"]
+    },
+    "cta_final": {
+      "headline": "Ready to improve your board's effectiveness?",
+      "primary": "Schedule Conversation",
+      "secondary": "Contact Us"
     }
   },
   "Header": {
