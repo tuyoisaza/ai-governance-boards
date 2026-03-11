@@ -5,10 +5,10 @@ import { Users, FileText, Settings, AreaChart } from "lucide-react";
 export const metadata = { title: "Dashboard Overview" };
 
 export default async function AdminDashboard() {
-  const [leadsCount, postsCount, mentorsCount] = await Promise.all([
+  const [leadsCount, postsCount, advisorsCount] = await Promise.all([
     prisma.lead.count(),
     prisma.blogPost.count(),
-    prisma.mentor.count()
+    prisma.advisor.count()
   ]);
 
   const stats = [
