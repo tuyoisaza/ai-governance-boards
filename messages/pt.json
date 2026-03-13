@@ -22,6 +22,15 @@
     "contact": "Agendar Sessão"
   },
   "Services": {
+    "hero_label": "Programas de Assessoria",
+    "hero_title": "Supervisão Estratégica",
+    "hero_subtitle": "Um modelo de engajamento progressivo projetado para institucionalizar a governança de IA no nível do Conselho através de especialização independente.",
+    "details_cta": "Detalhes do Programa",
+    "custom": {
+      "title": "Precisa de uma sincronização personalizada?",
+      "description": "Para conselhos com complexidades jurisdicionais ou industriais específicas, a Tuyo fornece estruturas de assessoria personalizadas adaptadas aos requisitos institucionais.",
+      "cta": "Iniciar Discussão"
+    },
     "briefing": {
       "title": "AI Board Briefing",
       "duration": "Sessão Estratégica de 3 horas",
@@ -78,11 +87,30 @@
   "Pricing": {
     "title": "Investimento em Assessoria",
     "subtitle": "Programas estratégicos projetados para a excelência na supervisão em nível de conselho.",
+    "cta": "Agendar Sincronia",
+    "footer_note": "* Todos os valores de investimento estão em USD. Ajustes jurisdicionais personalizados e despesas de viagem para sessões de conselho no local são calculados de forma independente.",
     "plans": {
       "briefing": "AI Board Briefing",
       "blueprint": "Governance Blueprint",
       "advisor": "Board Advisor"
+    },
+    "features": {
+      "briefing": ["Memorando de Resumo Executivo", "Arquitetura de Risco", "Estrutura de Perguntas e Respostas para o Conselho", "Sessão ao Vivo de 3 Horas"],
+      "blueprint": ["Estrutura de Governança Personalizada", "Auditoria de Maturidade", "Documentos de Design de Políticas", "Roteiro de 12 Meses"],
+      "advisor": ["Sessões Periódicas de Supervisão", "Relatórios de Pulso de Risco", "Avaliação de Investimentos", "Monitoramento Regulatório"]
     }
+  },
+  "Footer": {
+    "description": "Assessor Independente para Conselhos de Administração e Comitês Executivos. Elevando os padrões de governança para a era da Inteligência de Máquina.",
+    "services_head": "Serviços",
+    "firm_head": "Firma",
+    "philosophy": "NOSSA FILOSOFIA",
+    "advisory_team": "EQUIPE DE ASSESSORIA",
+    "resources": "RECURSOS",
+    "contact": "CONTATO",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "copyright": "TODOS OS DIREITOS ESTRATÉGICOS RESERVADOS."
   },
   "Contact": {
     "title": "Contato Executivo",

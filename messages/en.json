@@ -22,6 +22,15 @@
     "contact": "Secure Briefing"
   },
   "Services": {
+    "hero_label": "Advisory Programs",
+    "hero_title": "Strategic Board Supervision",
+    "hero_subtitle": "A progressive engagement model designed to institutionalize AI governance at the Board level through independent expertise.",
+    "details_cta": "Program Details",
+    "custom": {
+      "title": "Need a custom synchronization?",
+      "description": "For boards with specific jurisdictional or industry complexities, Tuyo provides customized advisory frameworks tailored to institutional requirements.",
+      "cta": "Initiate Discussion"
+    },
     "briefing": {
       "title": "AI Board Briefing",
       "duration": "3-hour Strategic Session",

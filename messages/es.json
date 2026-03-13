@@ -22,6 +22,15 @@
     "contact": "Agendar Sesión"
   },
   "Services": {
+    "hero_label": "Programas de Asesoría",
+    "hero_title": "Supervisión Estratégica",
+    "hero_subtitle": "Un modelo de compromiso progresivo diseñado para institucionalizar la gobernanza de la IA a nivel de la Junta a través de experiencia independiente.",
+    "details_cta": "Detalles del Programa",
+    "custom": {
+      "title": "¿Necesita una sincronización a medida?",
+      "description": "Para juntas con complejidades jurisdiccionales o de la industria específicas, Tuyo proporciona marcos de asesoría personalizados adaptados a los requisitos institucionales.",
+      "cta": "Iniciar Discusión"
+    },
     "briefing": {
       "title": "AI Board Briefing",
       "duration": "Sesión Estratégica de 3 horas",

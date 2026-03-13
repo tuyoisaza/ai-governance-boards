@@ -1,7 +1,12 @@
+"use client";
+
 import { Link } from "@/i18n/routing";
 import { Diamond, Mail, Linkedin, Twitter } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="bg-[var(--color-background)] border-t border-[var(--color-border)] py-16">
       <div className="container mx-auto px-6">
@@ -12,7 +17,7 @@ export default function Footer() {
               <span className="font-serif text-lg font-bold tracking-tighter uppercase">TUYO ISAZA</span>
             </Link>
             <p className="text-[var(--color-muted)] text-sm max-w-sm leading-relaxed">
-              Independent Advisor to Corporate Boards and Executive Committees. Elevating governance standards for the age of Machine Intelligence.
+              {t("description")}
             </p>
             <div className="flex gap-4">
               <Link href="#" className="p-2 border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors">
@@ -28,7 +33,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[var(--color-accent)] text-xs font-bold uppercase tracking-[0.2em] mb-6">Services</h4>
+            <h4 className="text-[var(--color-accent)] text-xs font-bold uppercase tracking-[0.2em] mb-6">{t("services_head")}</h4>
             <ul className="space-y-4 text-xs font-bold tracking-widest text-[var(--color-muted)]">
               <li><Link href="/services/ai-board-briefing" className="hover:text-white transition-colors">AI BOARD BRIEFING</Link></li>
               <li><Link href="/services/ai-governance-blueprint" className="hover:text-white transition-colors">GOVERNANCE BLUEPRINT</Link></li>
@@ -37,23 +42,23 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[var(--color-accent)] text-xs font-bold uppercase tracking-[0.2em] mb-6">Firm</h4>
+            <h4 className="text-[var(--color-accent)] text-xs font-bold uppercase tracking-[0.2em] mb-6">{t("firm_head")}</h4>
             <ul className="space-y-4 text-xs font-bold tracking-widest text-[var(--color-muted)]">
-              <li><Link href="/about" className="hover:text-white transition-colors">OUR PHILOSOPHY</Link></li>
-              <li><Link href="/advisors" className="hover:text-white transition-colors">ADVISORY TEAM</Link></li>
-              <li><Link href="/insights" className="hover:text-white transition-colors">RESOURCES</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">CONTACT</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">{t("philosophy")}</Link></li>
+              <li><Link href="/advisors" className="hover:text-white transition-colors">{t("advisory_team")}</Link></li>
+              <li><Link href="/insights" className="hover:text-white transition-colors">{t("resources")}</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">{t("contact")}</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-[var(--color-border)] flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[var(--color-muted)] text-[10px] font-bold uppercase tracking-widest">
-            © 2024 TUYO ISAZA. ALL STRATEGIC RIGHTS RESERVED.
+            © 2024 TUYO ISAZA. {t("copyright")}
           </p>
           <div className="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-[var(--color-muted)]">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-white transition-colors">{t("privacy")}</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">{t("terms")}</Link>
           </div>
         </div>
       </div>

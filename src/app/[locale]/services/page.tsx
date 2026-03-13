@@ -17,10 +17,10 @@ export default function ServicesPage() {
     <div className="py-24">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="max-w-4xl mb-24 space-y-8">
-          <span className="text-[var(--color-accent)] text-xs font-bold tracking-[0.4em] uppercase">Advisory Programs</span>
-          <h1 className="font-serif text-6xl md:text-8xl font-bold tracking-tighter">Strategic Board Supervision</h1>
+          <span className="text-[var(--color-accent)] text-xs font-bold tracking-[0.4em] uppercase">{t("hero_label")}</span>
+          <h1 className="font-serif text-6xl md:text-8xl font-bold tracking-tighter">{t("hero_title")}</h1>
           <p className="text-[var(--color-muted)] text-2xl font-serif italic leading-relaxed">
-            A progressive engagement model designed to institutionalize AI governance at the Board level through independent expertise.
+            {t("hero_subtitle")}
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function ServicesPage() {
               </div>
               <div className="md:col-span-3 p-12 flex items-center justify-center border-t md:border-t-0 md:border-l border-[var(--color-border)] bg-[var(--color-primary)]">
                 <Link href={service.href as any} className="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-[var(--color-foreground)] hover:text-[var(--color-accent)] transition-all group-hover:gap-5">
-                  Program Details <ArrowRight className="w-4 h-4" />
+                  {t("details_cta")} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -48,12 +48,12 @@ export default function ServicesPage() {
 
         <div className="mt-24 p-12 border-2 border-[var(--color-border)] bg-[var(--color-primary)] text-center space-y-6">
            <MessageSquare className="w-10 h-10 text-[var(--color-accent)] mx-auto" />
-           <h3 className="font-serif text-3xl font-bold">Need a custom synchronization?</h3>
+           <h3 className="font-serif text-3xl font-bold">{t("custom.title")}</h3>
            <p className="text-[var(--color-muted)] max-w-xl mx-auto">
-             For boards with specific jurisdictional or industry complexities, Tuyo provides customized advisory frameworks tailored to institutional requirements.
+             {t("custom.description")}
            </p>
            <Link href="/contact" className="inline-block bg-[var(--color-accent)] text-[var(--color-primary)] px-10 py-4 font-bold text-xs uppercase tracking-widest hover:scale-105 transition-transform">
-             Initiate Discussion
+             {t("custom.cta")}
            </Link>
         </div>
       </div>
