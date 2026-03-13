@@ -3,10 +3,18 @@ import { Link } from "@/i18n/routing";
 import prisma from "@/lib/prisma";
 import { Linkedin, Twitter } from "lucide-react";
 
-export default async function MentorsPage({ params }: { params: Promise<{ locale: string }> }) {
+export const dynamic = "force-dynamic";
+
+export default async function AdvisorsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "About" });
-  const advisors = await prisma.advisor.findMany({ orderBy: { createdAt: 'desc' } });
+  
+  let advisors: any[] = [];
+  try {
+    advisors = await prisma.advisor.findMany({ orderBy: { createdAt: 'desc' } });
+  } catch (error) {
+    console.error("Failed to fetch advisors:", error);
+  }
 
   return (
     <div className="py-24">
