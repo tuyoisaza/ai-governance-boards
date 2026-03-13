@@ -72,7 +72,8 @@
     "subtitle": "Independent AI Governance Advisor",
     "philosophy": {
       "title": "Independent Advisory",
-      "content": "Artificial Intelligence is not a technical implementation; it is a fundamental shift in corporate governance. My work ensures that Board Directors have the clarity, language, and independent frameworks required to supervise this transition."
+      "content": "Artificial Intelligence is not a technical implementation; it is a fundamental shift in corporate governance. My work ensures that Board Directors have the clarity, language, and independent frameworks required to supervise this transition.",
+      "long": "Boards hire independent advisors because internal management is often conflicted by operational goals. Tuyo provides the vendor-agnostic, strategic distance required to evaluate the true risks and opportunities of AI adoption."
     },
     "bio": {
       "title": "Executive Summary",
@@ -80,9 +81,65 @@
     },
     "experience": {
       "title": "Professional Record",
-      "content": "Collaborated with global organizations across Latin America and the United States, advising brands such as Microsoft, McDonald's, Nokia, Citibank, and Kellogg's. Tuyo is an international speaker, author, and leadership advisor focusing on innovation and technology-driven change."
+      "content": "Collaborated with global organizations across Latin America and the United States, advising brands such as Microsoft, McDonald's, Nokia, Citibank, and Kellogg's. Tuyo is an international speaker, author, and leadership advisor focusing on innovation and technology-driven change.",
+      "partners_head": "Strategic Partners",
+      "focus_head": "Focus Areas",
+      "partners": ["Microsoft", "McDonald's", "Nokia", "Citibank"],
+      "focus": ["AI Governance", "Risk Supervision", "Cognitive Transformation"]
+    },
+    "highlights_head": "Highlights",
+    "highlights": [
+      { "title": "20+ Years Experience", "desc": "Leader in digital transformation and innovation." },
+      { "title": "Multinational Impact", "desc": "Collaborations with Microsoft, McDonald's, and Citibank." },
+      { "title": "Author & Speaker", "desc": "Focusing on cognitive transformation and tech-driven change." }
+    ],
+    "speaker": {
+      "title": "Speaker & Author",
+      "content": "Tuyo speaks globally on the intersection of technology and human leadership, helping organizations prepare for a machine-augmented future."
     },
     "cta": "Request Executive Briefing"
+  },
+  "Insights": {
+    "title": "Executive Insights",
+    "subtitle": "A curated selection of frameworks, playbooks, and strategic perspectives designed exclusively for corporate directors and executive committees.",
+    "cta": "Request Full Report",
+    "faq_head": "Common Board Inquiries",
+    "faqs": [
+      {
+        "q": "What is the difference between AI management and AI governance?",
+        "a": "Management focuses on implementing tools and driving operational ROI. Governance focuses on defining ethical guardrails, evaluating systemic risks, setting strategic policy, and ensuring alignment with long-term corporate value."
+      },
+      {
+        "q": "Do board directors need technical AI expertise?",
+        "a": "No. Directors require a strategic, framework-driven understanding of the technology's impacts, risks, and limitations. They need to know what questions to ask, not how the underlying neural network functions."
+      }
+    ],
+    "static_insights": [
+      {
+        "category": "Playbook",
+        "title": "AI Governance Questions for Boards",
+        "description": "The 10 critical questions every corporate director must ask the executive team regarding AI strategy, data privacy, and investments.",
+        "date": "Current Quarter"
+      },
+      {
+        "category": "Framework",
+        "title": "AI Risk Oversight Framework",
+        "description": "A comprehensive model for segregating technological dependencies, reputational vulnerabilities, and regulatory exposure.",
+        "date": "Current Quarter"
+      },
+      {
+        "category": "Case Study",
+        "title": "Structuring the AI Technology Committee",
+        "description": "How a Fortune 500 manufacturer restructured its board to provide adequate supervision for generative AI transformation.",
+        "date": "Archived"
+      },
+      {
+        "category": "Executive Brief",
+        "title": "The Strategic Opportunity Mapper",
+        "description": "Identifying enterprise value pools beyond generic productivity enhancements.",
+        "date": "Current Quarter"
+      }
+    ]
   },
   "Pricing": {
     "title": "Advisory Investment",
@@ -94,8 +151,12 @@
     }
   },
   "Contact": {
-    "title": "Executive Contact",
-    "subtitle": "Direct communication for board-level advisory requests.",
+    "title": "Initiate Dialogue",
+    "subtitle": "Board-level advisory requires high-trust, direct communication. Submit your details to request a preliminary alignment session.",
+    "hero_label": "Confidential Synchrony",
+    "direct_channel": "Direct Channel",
+    "location_head": "Institutional Location",
+    "location": "Strategic HQ — Worldwide Readiness",
     "form": {
       "name": "Full Name",
       "email": "Corporate Email",

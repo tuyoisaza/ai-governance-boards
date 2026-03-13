@@ -22,15 +22,15 @@ export default async function ContactPage({
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid lg:grid-cols-12 gap-16 items-start">
           <div className="lg:col-span-7 space-y-12">
-            <span className="text-[var(--color-accent)] text-xs font-bold tracking-[0.4em] uppercase">Confidential Synchrony</span>
-            <h1 className="font-serif text-6xl md:text-8xl font-bold tracking-tighter">Initiate Dialogue</h1>
+            <span className="text-[var(--color-accent)] text-xs font-bold tracking-[0.4em] uppercase">{t("hero_label")}</span>
+            <h1 className="font-serif text-6xl md:text-8xl font-bold tracking-tighter">{t("title")}</h1>
             <p className="text-[var(--color-muted)] text-2xl font-serif italic leading-relaxed">
-              Board-level advisory requires high-trust, direct communication. Submit your details to request a preliminary alignment session.
+              {t("subtitle")}
             </p>
             
             <div className="grid sm:grid-cols-2 gap-12 pt-12 border-t border-[var(--color-border)]">
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">Direct Channel</h4>
+                <h4 className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">{t("direct_channel")}</h4>
                 <div className="space-y-2">
                   <a href="mailto:advisory@tuyoisaza.com" className="block text-sm font-bold tracking-widest text-[var(--color-muted)] uppercase hover:text-[var(--color-accent)] transition-colors">
                     advisory@tuyoisaza.com
@@ -41,8 +41,8 @@ export default async function ContactPage({
                 </div>
               </div>
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">Institutional Location</h4>
-                <p className="text-sm font-bold tracking-widest text-[var(--color-muted)] uppercase">Strategic HQ — Worldwide Readiness</p>
+                <h4 className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">{t("location_head")}</h4>
+                <p className="text-sm font-bold tracking-widest text-[var(--color-muted)] uppercase">{t("location")}</p>
               </div>
             </div>
           </div>

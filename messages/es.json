@@ -72,7 +72,8 @@
     "subtitle": "Asesor Independiente de Gobernanza de IA",
     "philosophy": {
       "title": "Asesoría Independiente",
-      "content": "La Inteligencia Artificial no es una implementación técnica; es un cambio fundamental en la gobernanza corporativa. Mi trabajo asegura que los Directores de Junta tengan la claridad, el lenguaje y los marcos independientes requeridos para supervisar esta transición."
+      "content": "La Inteligencia Artificial no es una implementación técnica; es un cambio fundamental en la gobernanza corporativa. Mi trabajo asegura que los Directores de Junta tengan la claridad, el lenguaje y los marcos independientes requeridos para supervisar esta transición.",
+      "long": "Las juntas contratan asesores independientes porque la gestión interna a menudo entra en conflicto con los objetivos operativos. Tuyo proporciona la distancia estratégica e independiente del proveedor necesaria para evaluar los verdaderos riesgos y oportunidades de la adopción de IA."
     },
     "bio": {
       "title": "Resumen Ejecutivo",
@@ -80,9 +81,65 @@
     },
     "experience": {
       "title": "Trayectoria Profesional",
-      "content": "Ha colaborado con organizaciones globales en América Latina y Estados Unidos, asesorando a marcas como Microsoft, McDonald's, Nokia, Citibank y Kellogg's. Tuyo es conferencista internacional, autor y asesor de liderazgo enfocado en innovación y cambio impulsado por la tecnología."
+      "content": "Ha colaborado con organizaciones globales en América Latina y Estados Unidos, asesorando a marcas como Microsoft, McDonald's, Nokia, Citibank y Kellogg's. Tuyo es conferencista internacional, autor y asesor de liderazgo enfocado en innovación y cambio impulsado por la tecnología.",
+      "partners_head": "Socios Estratégicos",
+      "focus_head": "Áreas de Enfoque",
+      "partners": ["Microsoft", "McDonald's", "Nokia", "Citibank"],
+      "focus": ["Gobernanza de IA", "Supervisión de Riesgos", "Transformación Cognitiva"]
+    },
+    "highlights_head": "Aspectos Destacados",
+    "highlights": [
+      { "title": "20+ Años de Experiencia", "desc": "Líder en transformación digital e innovación." },
+      { "title": "Impacto Multinacional", "desc": "Colaboraciones con Microsoft, McDonald's y Citibank." },
+      { "title": "Autor y Conferencista", "desc": "Enfocado en la transformación cognitiva y el cambio impulsado por la tecnología." }
+    ],
+    "speaker": {
+      "title": "Conferencista y Autor",
+      "content": "Tuyo habla globalmente sobre la intersección de la tecnología y el liderazgo humano, ayudando a las organizaciones a prepararse para un futuro aumentado por máquinas."
     },
     "cta": "Solicitar Sesión Ejecutiva"
+  },
+  "Insights": {
+    "title": "Conocimientos Ejecutivos",
+    "subtitle": "Una selección curada de marcos, guías y perspectivas estratégicas diseñadas exclusivamente para directores corporativos y comités ejecutivos.",
+    "cta": "Solicitar Reporte Completo",
+    "faq_head": "Consultas Comunes de la Junta",
+    "faqs": [
+      {
+        "q": "¿Cuál es la diferencia entre la gestión de la IA y la gobernanza de la IA?",
+        "a": "La gestión se centra en la implementación de herramientas y el impulso del ROI operativo. La gobernanza se centra en definir los límites éticos, evaluar los riesgos sistémicos, establecer políticas estratégicas y asegurar la alineación con el valor corporativo a largo plazo."
+      },
+      {
+        "q": "¿Los directores de la junta necesitan experiencia técnica en IA?",
+        "a": "No. Los directores requieren una comprensión estratégica impulsada por marcos de los impactos, riesgos y limitaciones de la tecnología. Necesitan saber qué preguntas hacer, no cómo funciona la red neuronal subyacente."
+      }
+    ],
+    "static_insights": [
+      {
+        "category": "Guía",
+        "title": "Preguntas de Gobernanza de IA para Juntas",
+        "description": "Las 10 preguntas críticas que todo director corporativo debe hacer al equipo ejecutivo con respecto a la estrategia de IA, la privacidad de los datos y las inversiones.",
+        "date": "Trimestre Actual"
+      },
+      {
+        "category": "Marco",
+        "title": "Marco de Supervisión de Riesgos de IA",
+        "description": "Un modelo integral para segregar las dependencias tecnológicas, las vulnerabilidades de reputación y la exposición regulatoria.",
+        "date": "Trimestre Actual"
+      },
+      {
+        "category": "Caso de Estudio",
+        "title": "Estructuración del Comité de Tecnología de IA",
+        "description": "Cómo un fabricante de Fortune 500 reestructuró su junta para proporcionar una supervisión adecuada para la transformación de IA generativa.",
+        "date": "Archivado"
+      },
+      {
+        "category": "Resumen Ejecutivo",
+        "title": "El Mapeador de Oportunidades Estratégicas",
+        "description": "Identificando los grupos de valor empresarial más allá de las mejoras de productividad genéricas.",
+        "date": "Trimestre Actual"
+      }
+    ]
   },
   "Pricing": {
     "title": "Inversión en Asesoría",
@@ -94,8 +151,12 @@
     }
   },
   "Contact": {
-    "title": "Contacto Ejecutivo",
-    "subtitle": "Comunicación directa para solicitudes de asesoría a nivel de junta.",
+    "title": "Iniciar Diálogo",
+    "subtitle": "La asesoría a nivel de junta requiere una comunicación directa y de alta confianza. Envíe sus detalles para solicitar una sesión de alineación preliminar.",
+    "hero_label": "Sincronía Confidencial",
+    "direct_channel": "Canal Directo",
+    "location_head": "Ubicación Institucional",
+    "location": "Sede Estratégica — Preparación Mundial",
     "form": {
       "name": "Nombre Completo",
       "email": "Correo Corporativo",
@@ -104,3 +165,4 @@
     }
   }
 }
+```

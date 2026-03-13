@@ -72,7 +72,8 @@
     "subtitle": "Assessor Independente de Governança de IA",
     "philosophy": {
       "title": "Assessoria Independente",
-      "content": "A Inteligência Artificial não é uma implementação técnica; é uma mudança fundamental na governança corporativa. Meu trabalho garante que os Diretores de Conselho tenham a clareza, a linguagem e as estruturas independentes necessárias para supervisionar essa transição."
+      "content": "A Inteligência Artificial não é uma implementação técnica; é uma mudança fundamental na governança corporativa. Meu trabalho garante que os Diretores de Conselho tenham a clareza, a linguagem e as estruturas independentes necessárias para supervisionar essa transição.",
+      "long": "Os conselhos contratam assessores independentes porque a gestão interna muitas vezes entra em conflito com os objetivos operacionais. Tuyo fornece a distância estratégica e agnóstica de fornecedores necessária para avaliar os verdadeiros riscos e oportunidades da adoção de IA."
     },
     "bio": {
       "title": "Resumo Executivo",
@@ -80,41 +81,73 @@
     },
     "experience": {
       "title": "Histórico Profissional",
-      "content": "Colaborou com organizações globais na América Latina e nos Estados Unidos, assessorando marcas como Microsoft, McDonald's, Nokia, Citibank e Kellogg's. Tuyo é palestrante internacional, autor e assessor de liderança focado em inovação e mudanças impulsionadas pela tecnologia."
+      "content": "Colaborou com organizações globais na América Latina e nos Estados Unidos, assessorando marcas como Microsoft, McDonald's, Nokia, Citibank e Kellogg's. Tuyo é palestrante internacional, autor e assessor de liderança focado em inovação e mudanças impulsionadas pela tecnologia.",
+      "partners_head": "Parceiros Estratégicos",
+      "focus_head": "Áreas de Foco",
+      "partners": ["Microsoft", "McDonald's", "Nokia", "Citibank"],
+      "focus": ["Governança de IA", "Supervisão de Riscos", "Transformação Cognitiva"]
+    },
+    "highlights_head": "Destaques",
+    "highlights": [
+      { "title": "20+ Anos de Experiência", "desc": "Líder em transformação digital e inovação." },
+      { "title": "Impacto Multinacional", "desc": "Colaborações com Microsoft, McDonald's e Citibank." },
+      { "title": "Autor e Palestrante", "desc": "Focado em transformação cognitiva e mudanças impulsionadas pela tecnologia." }
+    ],
+    "speaker": {
+      "title": "Palestrante e Autor",
+      "content": "Tuyo fala globalmente sobre a interseção entre tecnologia e liderança humana, ajudando as organizações a se prepararem para um futuro aumentado por máquinas."
     },
     "cta": "Solicitar Sessão Executiva"
   },
-  "Pricing": {
-    "title": "Investimento em Assessoria",
-    "subtitle": "Programas estratégicos projetados para a excelência na supervisão em nível de conselho.",
-    "cta": "Agendar Sincronia",
-    "footer_note": "* Todos os valores de investimento estão em USD. Ajustes jurisdicionais personalizados e despesas de viagem para sessões de conselho no local são calculados de forma independente.",
-    "plans": {
-      "briefing": "AI Board Briefing",
-      "blueprint": "Governance Blueprint",
-      "advisor": "Board Advisor"
-    },
-    "features": {
-      "briefing": ["Memorando de Resumo Executivo", "Arquitetura de Risco", "Estrutura de Perguntas e Respostas para o Conselho", "Sessão ao Vivo de 3 Horas"],
-      "blueprint": ["Estrutura de Governança Personalizada", "Auditoria de Maturidade", "Documentos de Design de Políticas", "Roteiro de 12 Meses"],
-      "advisor": ["Sessões Periódicas de Supervisão", "Relatórios de Pulso de Risco", "Avaliação de Investimentos", "Monitoramento Regulatório"]
-    }
-  },
-  "Footer": {
-    "description": "Assessor Independente para Conselhos de Administração e Comitês Executivos. Elevando os padrões de governança para a era da Inteligência de Máquina.",
-    "services_head": "Serviços",
-    "firm_head": "Firma",
-    "philosophy": "NOSSA FILOSOFIA",
-    "advisory_team": "EQUIPE DE ASSESSORIA",
-    "resources": "RECURSOS",
-    "contact": "CONTATO",
-    "privacy": "Política de Privacidade",
-    "terms": "Termos de Serviço",
-    "copyright": "TODOS OS DIREITOS ESTRATÉGICOS RESERVADOS."
+  "Insights": {
+    "title": "Insights Executivos",
+    "subtitle": "Uma seleção curada de frameworks, playbooks e perspectivas estratégicas projetadas exclusivamente para diretores corporativos e comitês executivos.",
+    "cta": "Solicitar Relatório Completo",
+    "faq_head": "Perguntas Comuns do Conselho",
+    "faqs": [
+      {
+        "q": "Qual é a diferença entre gestão de IA e governança de IA?",
+        "a": "A gestão foca na implementação de ferramentas e no ROI operacional. A governança foca em definir limites éticos, avaliar riscos sistêmicos, estabelecer políticas estratégicas e garantir o alinhamento com o valor corporativo de longo prazo."
+      },
+      {
+        "q": "Os diretores do conselho precisam de experiência técnica em IA?",
+        "a": "Não. Os diretores precisam de uma compreensão estratégica e estruturada dos impactos, riscos e limitações da tecnologia. Eles precisam saber quais perguntas fazer, não como a rede neural subjacente funciona."
+      }
+    ],
+    "static_insights": [
+      {
+        "category": "Playbook",
+        "title": "Perguntas de Governança de IA para Conselhos",
+        "description": "As 10 perguntas críticas que todo diretor corporativo deve fazer à equipe executiva em relação à estratégia de IA, privacidade de dados e investimentos.",
+        "date": "Trimestre Atual"
+      },
+      {
+        "category": "Framework",
+        "title": "Framework de Supervisão de Riscos de IA",
+        "description": "Um modelo abrangente para segregar dependências tecnológicas, vulnerabilidades de reputação e exposição regulatória.",
+        "date": "Trimestre Atual"
+      },
+      {
+        "category": "Estudo de Caso",
+        "title": "Estruturação do Comitê de Tecnologia de IA",
+        "description": "Como um fabricante da Fortune 500 reestruturou seu conselho para fornecer supervisão adequada para a transformação de IA generativa.",
+        "date": "Arquivado"
+      },
+      {
+        "category": "Resumo Executivo",
+        "title": "Mapeador de Oportunidades Estratégicas",
+        "description": "Identificando pools de valor empresarial além de melhorias genéricas de produtividade.",
+        "date": "Trimestre Atual"
+      }
+    ]
   },
   "Contact": {
-    "title": "Contato Executivo",
-    "subtitle": "Comunicação direta para solicitações de assessoria em nível de conselho.",
+    "title": "Iniciar Diálogo",
+    "subtitle": "A assessoria em nível de conselho exige comunicação direta e de alta confiança. Envie seus detalhes para solicitar uma sessão de alinhamento preliminar.",
+    "hero_label": "Sincronia Confidencial",
+    "direct_channel": "Canal Direto",
+    "location_head": "Localização Institucional",
+    "location": "Sede Estratégica — Prontidão Mundial",
     "form": {
       "name": "Nome Completo",
       "email": "E-mail Corporativo",

@@ -1,43 +1,23 @@
 import { Link } from "@/i18n/routing";
 import { ArrowRight, FileText } from "lucide-react";
 import prisma from "@/lib/prisma";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = {
-  title: "Executive Insights & Playbooks | AI Governance",
-  description: "Playbooks, frameworks, and critical insights on AI risk and strategy for corporate boards.",
-};
-
-const staticInsights = [
-  {
-    category: "Playbook",
-    title: "AI Governance Questions for Boards",
-    description: "The 10 critical questions every corporate director must ask the executive team regarding AI strategy, data privacy, and investments.",
-    date: "Current Quarter"
-  },
-  {
-    category: "Framework",
-    title: "AI Risk Oversight Framework",
-    description: "A comprehensive model for segregating technological dependencies, reputational vulnerabilities, and regulatory exposure.",
-    date: "Current Quarter"
-  },
-  {
-    category: "Case Study",
-    title: "Structuring the AI Technology Committee",
-    description: "How a Fortune 500 manufacturer restructured its board to provide adequate supervision for generative AI transformation.",
-    date: "Archived"
-  },
-  {
-    category: "Executive Brief",
-    title: "The Strategic Opportunity Mapper",
-    description: "Identifying enterprise value pools beyond generic productivity enhancements.",
-    date: "Current Quarter"
-  }
-];
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Insights" });
+  return { 
+    title: t("title"),
+    description: t("subtitle")
+  };
+}
 
 export default async function InsightsPage({ params }: { params: Promise<{ locale: string }> }) {
   await params;
+  const t = await getTranslations("Insights");
   let dbPosts: any[] = [];
   
   try {
@@ -49,6 +29,8 @@ export default async function InsightsPage({ params }: { params: Promise<{ local
     console.error("Failed to fetch insights from database:", error);
   }
 
+  const staticInsights = t.raw("static_insights") as any[];
+
   const insights = dbPosts.length > 0 
     ? dbPosts.map(p => ({
         category: "Insight",
@@ -57,13 +39,16 @@ export default async function InsightsPage({ params }: { params: Promise<{ local
         date: new Date(p.createdAt).toLocaleDateString()
       }))
     : staticInsights;
+
+  const faqs = t.raw("faqs") as { q: string, a: string }[];
+
   return (
     <div className="py-24">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="mb-16">
-          <h1 className="font-serif text-5xl font-bold mb-6">Executive Insights</h1>
+          <h1 className="font-serif text-5xl font-bold mb-6">{t("title")}</h1>
           <p className="text-[var(--color-muted)] text-xl leading-relaxed max-w-3xl">
-            A curated selection of frameworks, playbooks, and strategic perspectives designed exclusively for corporate directors and executive committees.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -87,7 +72,7 @@ export default async function InsightsPage({ params }: { params: Promise<{ local
                   }} 
                   className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[var(--color-foreground)] hover:text-[var(--color-accent)] transition-colors"
                 >
-                  Request Full Report <ArrowRight className="w-4 h-4" />
+                  {t("cta")} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -96,26 +81,19 @@ export default async function InsightsPage({ params }: { params: Promise<{ local
 
         {/* SEO Focused AEO Section */}
         <div className="mt-24 border-t border-[var(--color-border)] pt-16">
-          <h2 className="font-serif text-3xl font-bold mb-8 text-center">Common Board Inquiries</h2>
+          <h2 className="font-serif text-3xl font-bold mb-8 text-center">{t("faq_head")}</h2>
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="border border-[var(--color-border)] p-6 bg-[var(--color-secondary)]/10">
-              <div className="flex items-start gap-4">
-                <FileText className="w-6 h-6 text-[var(--color-accent)] shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-bold mb-2">What is the difference between AI management and AI governance?</h4>
-                  <p className="text-sm text-[var(--color-muted)] leading-relaxed">Management focuses on implementing tools and driving operational ROI. Governance focuses on defining ethical guardrails, evaluating systemic risks, setting strategic policy, and ensuring alignment with long-term corporate value.</p>
+            {faqs.map((faq, idx) => (
+              <div key={idx} className="border border-[var(--color-border)] p-6 bg-[var(--color-secondary)]/10">
+                <div className="flex items-start gap-4">
+                  <FileText className="w-6 h-6 text-[var(--color-accent)] shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold mb-2">{faq.q}</h4>
+                    <p className="text-sm text-[var(--color-muted)] leading-relaxed">{faq.a}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="border border-[var(--color-border)] p-6 bg-[var(--color-secondary)]/10">
-              <div className="flex items-start gap-4">
-                <FileText className="w-6 h-6 text-[var(--color-accent)] shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-bold mb-2">Do board directors need technical AI expertise?</h4>
-                  <p className="text-sm text-[var(--color-muted)] leading-relaxed">No. Directors require a strategic, framework-driven understanding of the technology's impacts, risks, and limitations. They need to know what questions to ask, not how the underlying neural network functions.</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

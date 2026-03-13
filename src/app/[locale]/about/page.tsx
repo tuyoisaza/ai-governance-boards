@@ -5,11 +5,14 @@ import { Award, BookOpen, Globe, Mic2, Shield } from "lucide-react";
 export default function AboutPage() {
   const t = useTranslations("About");
 
-  const highlights = [
-    { icon: <Award className="w-5 h-5" />, title: "20+ Years Experience", desc: "Leader in digital transformation and innovation." },
-    { icon: <Globe className="w-5 h-5" />, title: "Multinational Impact", desc: "Collaborations with Microsoft, McDonald's, and Citibank." },
-    { icon: <BookOpen className="w-5 h-5" />, title: "Author & Speaker", desc: "Focusing on cognitive transformation and tech-driven change." }
-  ];
+  const highlightIcons = [<Award className="w-5 h-5" />, <Globe className="w-5 h-5" />, <BookOpen className="w-5 h-5" />];
+  const highlights = (t.raw("highlights") as { title: string, desc: string }[]).map((h, i) => ({
+    ...h,
+    icon: highlightIcons[i]
+  }));
+
+  const partners = t.raw("experience.partners") as string[];
+  const focusAreas = t.raw("experience.focus") as string[];
 
   return (
     <div className="py-24">
@@ -48,29 +51,24 @@ export default function AboutPage() {
               
               <div className="grid sm:grid-cols-2 gap-8 pt-6">
                 <div className="p-6 border border-[var(--color-border)] bg-[var(--color-secondary)]/10">
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">Strategic Partners</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">{t("experience.partners_head")}</h4>
                   <ul className="text-sm font-bold tracking-widest text-[var(--color-muted)] space-y-2 uppercase">
-                    <li>Microsoft</li>
-                    <li>McDonald's</li>
-                    <li>Nokia</li>
-                    <li>Citibank</li>
+                    {partners.map(p => <li key={p}>{p}</li>)}
                   </ul>
                 </div>
                 <div className="p-6 border border-[var(--color-border)] bg-[var(--color-secondary)]/10">
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">Focus Areas</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-4">{t("experience.focus_head")}</h4>
                   <ul className="text-sm font-bold tracking-widest text-[var(--color-muted)] space-y-2 uppercase">
-                    <li>AI Governance</li>
-                    <li>Risk Supervision</li>
-                    <li>Cognitive Transformation</li>
+                    {focusAreas.map(f => <li key={f}>{f}</li>)}
                   </ul>
                 </div>
               </div>
             </section>
 
             <section className="bg-[var(--color-secondary)]/10 p-12 space-y-8 border border-[var(--color-border)]">
-              <h2 className="font-serif text-3xl font-bold">Independent Advisory Philosophy</h2>
+              <h2 className="font-serif text-3xl font-bold">{t("philosophy.title")}</h2>
               <p className="text-[var(--color-muted)] leading-relaxed font-medium">
-                Boards hire independent advisors because internal management is often conflicted by operational goals. Tuyo provides the vendor-agnostic, strategic distance required to evaluate the true risks and opportunities of AI adoption.
+                {t("philosophy.long")}
               </p>
               <Link href="/contact" className="inline-block bg-[var(--color-foreground)] text-[var(--color-primary)] px-10 py-4 font-bold text-xs uppercase tracking-widest hover:bg-[var(--color-accent)] transition-colors">
                 {t("cta")}
@@ -81,7 +79,7 @@ export default function AboutPage() {
           <div className="lg:col-span-4 space-y-12">
             <div className="sticky top-32 space-y-12">
               <div>
-                <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--color-accent)] mb-8">Highlights</h3>
+                <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--color-accent)] mb-8">{t("highlights_head")}</h3>
                 <div className="space-y-10">
                   {highlights.map((item, id) => (
                     <div key={id} className="flex gap-6">
@@ -97,9 +95,9 @@ export default function AboutPage() {
 
               <div className="p-8 border-2 border-[var(--color-accent)] space-y-6">
                  <Mic2 className="w-8 h-8 text-[var(--color-accent)]" />
-                 <h3 className="font-serif text-2xl font-bold">Speaker & Author</h3>
+                 <h3 className="font-serif text-2xl font-bold">{t("speaker.title")}</h3>
                  <p className="text-sm text-[var(--color-muted)] leading-relaxed">
-                   Tuyo speaks globally on the intersection of technology and human leadership, helping organizations prepare for a machine-augmented future.
+                   {t("speaker.content")}
                  </p>
               </div>
             </div>
